@@ -1,8 +1,11 @@
 package introduction;
 
-public class HelloWorld {
+import org.apache.log4j.Logger;
 
+public class HelloWorld {
+    static Logger log = Logger.getLogger("name");
     public static void main(String [ ] args) {
+        log.info("asdad");
         System.out.println("Hello! Witaj!");
     }
 }

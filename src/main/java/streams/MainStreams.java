@@ -40,6 +40,9 @@ public class MainStreams {
         String[] stringArray = new String[]{"Streams", "can", "be", "created", "from", "arrays"};
 
         Arrays.stream(stringArray).forEach(System.out::println);
+        List<Student> st = students.stream()
+                .filter(s -> s.getYear() >= 2)
+                .collect(Collectors.toList());
     }
 
 }

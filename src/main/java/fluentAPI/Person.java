@@ -30,7 +30,7 @@ public class Person implements IPerson {
 
     @Override
     public IPerson sayHelloToFriends() {
-        // ToDo
+        friends.forEach(f->System.out.println("hi "+f.name));
         return this;
     }
 

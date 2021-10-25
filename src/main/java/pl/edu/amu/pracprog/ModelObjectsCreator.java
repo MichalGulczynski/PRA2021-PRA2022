@@ -40,6 +40,7 @@ public class ModelObjectsCreator {
         emp.setLastName("Polak" + new Random().nextInt());
         emp.setSalary(100);
         emp.setPesel(Math.abs(new Random().nextInt()));
+        emp.setBirthDate();
 
         emp2 = new Employee();
         emp2.setFirstName("Roman");

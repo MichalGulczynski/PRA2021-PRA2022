@@ -1,8 +1,9 @@
 {
   "id" : 0,
   "firstName" : "Jan",
-  "lastName" : "Polak-1135440852",
-  "birthDate" : null,
+  "lastName" : "Polak581981286",
+  "zarobki" : 200,
+  "pesel" : 797097969,
   "address" : {
     "id" : 0,
     "street" : "poznanska",
@@ -15,8 +16,9 @@
   "subworkers" : [ {
     "id" : 0,
     "firstName" : "Roman",
-    "lastName" : "Polak1199377146",
-    "birthDate" : null,
+    "lastName" : "Polak1604895292",
+    "zarobki" : 100,
+    "pesel" : 1536252129,
     "address" : {
       "id" : 0,
       "street" : "poznanska",
@@ -26,8 +28,6 @@
       "postcode" : "99090"
     },
     "managers" : [ ],
-    "subworkers" : [ ],
-    "zarobki" : 100
-  } ],
-  "zarobki" : 200
+    "subworkers" : [ ]
+  } ]
 }

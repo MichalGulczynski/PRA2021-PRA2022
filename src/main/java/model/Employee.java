@@ -1,5 +1,10 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import org.joda.time.DateTime;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,9 +16,24 @@ public class Employee {
 
     private String lastName;
 
+    @JsonProperty("zarobki")
     private int salary;
 
+    @JsonIgnore
     private int pesel;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss.SSSZ")
+    private DateTime birthDate;
+
+    public DateTime getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate() {
+        this.birthDate = birthDate;
+    }
+
+
 
     Address address;
 
